@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Verificador de idade</title>
+    <link rel="stylesheet" href="estilo.css">
+</head> 
+<body> 
+    <header>
+            <h1>Verificador de idade</h1>
+    </header>
+    <section>
+            <div>
+                <p>Ano de Nascimento: 
+                    <input type="number" name="txtano" id="txtano" min="0"> <!-- COLOCAR UM CAIXA DE TEXTO NESSA DIV -->
+                </p>
+                <p>Sexo: 
+                    <input type="radio" name="radsex" id="mas" checked> <!-- Coloca a opção de selecionar em bolinha(radio) -->
+                    <label for="mas">Masculino</label> <!-- O LABEL é muito importante para colocar leganda no input, servindo como um indicador do que está selecionando -->
+                    <input type="radio" name="radsex" id="fem">
+                    <label for="fem">Feminino</label>
+                </p>
+                <p>
+                    <input type="button" value="verificar" onclick="verificar()"> <!-- SERVE PARA CRIAR UM BOTÃO. E O ONCLICK SERVE PARA QUANDO CLICAR NO BOTÃO EXECUTAR A AÇÃO -->
+                </p>
+            </div>
+            <div id="res">
+                    Preencha os dados acima para ver os resultados! <!-- ONDE MOSTRARA O RESULTADO -->
+            </div>
+    </section>
+    <footer>
+        <p>&copy; LucasSamuel</p>
+    </footer>
+    <script src="script.js"></script> <!-- LIGA UM ARQUIVO .JS COM O HTML. SERVE PARA EDITAR EXTERIORMENTE -->
+</body>
+</html>
